@@ -15,10 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@acme/Navigate": ["libs/Navigate/src/index.ts"],
-      "about/Module": ["apps/about/src/remote-entry.ts"],
-      "cart/Module": ["apps/cart/src/remote-entry.ts"],
-      "shop/Module": ["apps/shop/src/remote-entry.ts"]
+      "@acme/Navigate": ["libs/Navigate/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

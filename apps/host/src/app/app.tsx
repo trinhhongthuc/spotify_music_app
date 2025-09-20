@@ -2,9 +2,6 @@ import * as React from 'react';
 import NxWelcome from './nx-welcome';
 import { Link, Route, Routes } from 'react-router-dom';
 
-const Shop = React.lazy(() => import('shop/Module'));
-const Cart = React.lazy(() => import('cart/Module'));
-const About = React.lazy(() => import('about/Module'));
 const Navigate = React.lazy(() => import('@acme/Navigate'));
 
 export function App() {
@@ -15,22 +12,12 @@ export function App() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/shop">Shop</Link>
-        </li>
-        <li>
-          <Link to="/cart">Cart</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
           <Navigate />
         </li>
         lo
       </ul>
       <Routes>
         <Route path="/" element={<NxWelcome title="host" />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </React.Suspense>
   );

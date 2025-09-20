@@ -1,1 +1,1 @@
-export { default } from './lib/Navigate';
+export { default } from './Navigate';
