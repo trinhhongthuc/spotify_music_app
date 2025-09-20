@@ -1,0 +1,9 @@
+{
+  "name": "Navigate",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/Navigate/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project Navigate --web",
+  "targets": {}
+}
