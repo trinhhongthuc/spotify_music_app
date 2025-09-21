@@ -2,7 +2,10 @@
   "name": "@acme/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:host": "nx run host:serve --open --watch",
+    "start:home": "nx run home:serve --open"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.14.5",
