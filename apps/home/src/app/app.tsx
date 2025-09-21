@@ -1,5 +1,6 @@
 import { PlayList } from '../components/PlayList';
 import styled from 'styled-components';
+import { Header } from '../components/Header';
 
 const HomeContainer = styled.div`
   background: linear-gradient(
@@ -106,6 +107,7 @@ export function App() {
 
   return (
     <HomeContainer>
+      <Header />
       {playlistData.map((item, index) => (
         <PlayList
           title={item.title}
